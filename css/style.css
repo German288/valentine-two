@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media(max-width: 500px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 1000px;
+    }
+
+    .btn {
+        padding: 15px 30px;
+        border: 1px solid rgb(180, 121, 121);
+        border-radius: 10px;
+        background: #b66767;
+        font-family: "Montserrat", sans-serif;
+
+        font-size: 17px;
+        color: #dadada;
+    }
+
+    .wrapper {
+        display: none;
+        flex-direction: column;
+    }
+
+    .img {
+
+        width: 300px;
+        margin: 0 auto;
+        animation: spin .9s infinite linear;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: translate3d(0, -5%, 0);
+        }
+        50% {
+            transform: translate3d(0, 5%, 0);
+        }
+        100% {
+            transform: translate3d(0, -5%, 0);
+        }
+    }
+
+    .text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 11px;
+
+        margin-top: 30px;
+        padding: 10px;
+        text-align: center;
+
+        background: #bb6666;
+        border-radius: 10px;
+        color: rgb(235, 199, 205);
+        line-height: 20px;
+    }
+}
